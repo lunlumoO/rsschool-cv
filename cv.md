@@ -4,9 +4,9 @@
 
 
 ## 📞 Contacts
-**Location:** Low Orbitm, Cloud Ark
-**E-mail:** axiom_breaker@multiverse.dev
-**GitHub:** [github.com/lunlumo0](https://github.com/lunlumo0/)
+- **Location:** Low Orbitm, Cloud Ark
+- **E-mail:** axiom_breaker@multiverse.dev
+- **GitHub:** [github.com/lunlumo0](https://github.com/lunlumo0/)
 
 ---
 
@@ -37,21 +37,21 @@
 ---
 
 ## 🛠 Skills
-**Simulation & Modeling:**
+- **Simulation & Modeling:**
 MCNP, GEANT4, COMSOL Multiphysics
 
-**Experimental Techniques:**
+- **Experimental Techniques:**
 Radiation detection (scintillation, semiconductor detectors), vacuum systems
 
-**Mathematics & Physics**
+- **Mathematics & Physics**
 Quantum field theory, differential equasions, numerical methods, linear algerba
 
-**Documentation & Reporting**
+- **Documentation & Reporting**
 LaTeX, data cisualization (Matplotlib, seaborn)
 
 ---
 
-## 🗣 Lunguages
+## 🗣 Languages
 - English (Bilingual proficiency)
 - Russian (Bilingual proficiency)
 - Galach (Professional working proficiency)
