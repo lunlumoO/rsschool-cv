@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
-">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -22,17 +21,28 @@
             <img src="image.png" alt="avatar" class="profile-image">
         </div>
 </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+ </nav>
 
 <div class="main-content">
     <div class="left-column">
-        <section class="contact">
+        <section class="contact" id="contact">
             <h3>Contact:</h3>
             <p><i class="fas fa-map-marker-alt"></i>San Diego, California, USA</p>
             <p><i class="fas fa-envelope"></i>lulu.lunlumo0@gmail.com</p>
             <p><i class="fas fa-phone"></i>+1-(xxx)-xxx-xxxx</p>
         </section>
 
-        <section class="education">
+        <section class="education" id="education">
             <h3>Education:</h3>
             <div class="education-item">
                 <div class="period">2018-2020</div>
@@ -51,7 +61,7 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <h3>Skills:</h3>
             <ul class="skills-list">
                 <li>
@@ -89,7 +99,7 @@
             </ul>
         </section>
 
-        <section class="languages">
+        <section class="languages" id="languages">
             <h3>Languages:</h3>
             <ul class="language-list">
                 <li>
@@ -109,49 +119,92 @@
 </div>
 
  <div class="right-column">
-     <section class="experience">
+     <section class=" about" id="about">
+         <h3>About Me:</h3>
+         <div class="about-content">
+         <p>
+             I am a junior front-end developer with a strong passion for creating engaging and functional web applications. Self-motivated and dedicated, I continuously seek opportunities to learn, grow, and take on new challenges. I thrive in collaborative environments and value the importance of teamwork in achieving shared goals
+             <br>
+             <br>
+             With a proven ability to quickly adapt to new technologies, I am a fast learner who embraces continuous improvement. I approach problems with a solution-oriented mindset, consistently identifying and resolving issues efficiently. My creativity and innovative thinking enable me to develop unique ideas and contribute meaningfully to projects.         </p>
+         </div>
+     </section>
+     <section class="experience" id="experience">
         <h3>Experience:</h3>
          <div class="experience-timeline">
              <div class="experience-item">
-                 <div class="period">2025-present</div>
-                 <div class="company">RS School</div>
-                 <div class="position">Junior Front-End Developer</div>
+                 <div class="period">2023-present</div>
+                 <div class="company">GeoSite</div>
+                 <div class="position">Data Analyst</div>
                  <div class="description">
-                     <p>
-                         I am currently working as a Junior Front-End Developer at RS School.
-                     </p>
+                         <ul>
+                        <li>Build and manage datasets relevant to ongoing projects.</li>
+                        <li>Merge and join datasets from multiple sources.</li>
+                        <li>Document data sources and processing steps clearly.</li>
+                        <li>Perform exploratory data analysis (EDA) to identify patterns, trends, or anomalies.</li>
+                        </ul>
                  </div>
              </div>
              <div class="experience-item">
-                 <div class="period">2019-present</div>
-                 <div class="company">COMPANY</div>
-                 <div class="position">TITLE</div>
+                 <div class="period">2021-2023</div>
+                 <div class="company">Affirm</div>
+                 <div class="position">Data Analyst</div>
                  <div class="description">
-                     <p>
-                         I am currently working as a Junior Front-End Developer at RS School.
-                     </p>
+                        <ul>
+                     <li>Collect, clean, validate, and organize energy consumption and operational data from multiple internal and external sources.</li>
+                     <li>Build and maintain structured datasets to support energy reporting and operational analytics.</li>
+                     <li>Analyze data to identify trends, generate actionable insights, and produce regular performance reports.</li>
+                     <li>Support the automation of data collection, transformation, and loading processes.</li>
+                        </ul>
+                 </div>
+             </div>
+             <div class="experience-item">
+                 <div class="period">2018-2021</div>
+                 <div class="company">University of San Diego</div>
+                 <div class="position">Research Assistant</div>
+                 <div class="description">
+                         <ul>
+                        <li>Write, test, and debug code for computational experiments or simulations.</li>
+                        <li>Run batch jobs on high-performance computing (HPC) clusters or local servers.</li>
+                        <li>Analyze simulation results and compare them to theoretical predictions or experimental data.</li>
+                        <li>Solve differential equations and optimization problems related to physical theories.</li>
+                        </ul>
                  </div>
              </div>
          </div>
      </section>
 
+     <section class="my-projects" id="projects">
+         <h3>My Projects:</h3>
+         <div class="project-list">
+             <div class="project-item">
+                 <div class="project-name"><b>Personal Portfolio Website</b></div>
+                 <div class="project-description">
+                     <p>A personal portfolio website built with HTML, CSS, and JavaScript. It is a single-page application that allows users to view my resume, projects, and contact information.</p>
+                 </div>
+                 <div class="project-tech">Technologies: HTML, CSS, JavaScript</div>
+                 <div class="project-links">
+                     <a href="https://github.com/lunlumoO/rsschool-cv" target="_blank">GitHub</a>
+                     <a href="https://lunlumoO.github.io/rsschool-cv/" target="_blank">Live Demo</a>
+                 </div>
+             </div>
+          </div>
+     </section>
+
      <section class="code-example">
          <h3>Code Example:</h3>
-         <pre> <code class="language-javascript">
-           // The first lime of code to greet the world
-             function helloWorld() {
-                return "Hello, World!";
-             }
+         <pre><code class="language-javascript">// The first lime of code to greet the world
+function helloWorld() {
+    return "Hello, World!";
+}
 
-           // Function with custom greeting
-             function greetPerson(name) {
-                return "Hello, ${name}!";
-             }
+// Function with custom greeting
+function greetPerson(name) {
+    return "Hello, ${name}!";
+}
 
-           console.log(helloWorld()); //Output: Hello, World!
-           console.log(greetPerson("Axiom")); //Output: Hello, Axiom!
-         </code>
-         </pre>
+console.log(helloWorld()); //Output: Hello, World!
+console.log(greetPerson("Axiom")); //Output: Hello, Axiom!</code></pre>
      </section>
  </div>
 </div>
