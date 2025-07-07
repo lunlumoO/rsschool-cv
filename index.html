@@ -1,66 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
 </head>
+
 <body>
-
-<header>
-    <h1>Luana Lenavaar</h1>
-    <p>Enthusiastic specialist leveraging strategic and tactical abilities to support the project.</p>
-</header>
-
-<div class="profile-image-container">
-    <img src="image.png" alt="avatar" class="profile-image">
+<div class="resume">
+    <div class="header">
+        <div class="name-title">
+            <h1>LUANA</h1>
+            <h2>LENAVAAR</h2>
+            <p class="profession"> Junior Front-End Developer</p>
+        </div>
+        <div class="photo">
+            <img src="image.png" alt="avatar" class="profile-image">
+        </div>
 </div>
 
-<section class="section">
-    <h2>Contacts</h2>
-    <article>
-        <ul>
-            <li>Location: Low Orbit, Cloud Ark</li>
-            <li>E-mail: axiom_breaker@multiverse.dev</li>
-            <li>GitHub: github.com/lunlumo0</li>
-        </ul>
-    </article>
-    <br>
-    <h2>Education</h2>
-    <article>
-        <h3>The Imperial University of Trantor</h3>
-        <p>MS in Nuclear Physics | 2018-2021 </p>
-        <p>Capstone Project: Simulation and Analysis of Neutron Transport in Subcritical Reactor System</p>
-    </article>
-    <article>
-        <h3>Miskatonic University</h3>
-        <p>BS in Theoretical Physics and Applied Mathematics | 2012-2016 </p>
-        <p>Capstone Project: Analytical Study of Quantum Tunneling in Multi-Barrier Potential Systems</p>
-    </article>
-    <br>
-    <h2>Publications</h2>
-    <article>
-        <ul>
-            <li>Luana, L., Crouch, B. (2021). Decoherence Thresholds in Macroscopic Quantum Systems: Toward Controlled State Branching. Journal of Quantum Systems and Foundations. 12(3), 243-258</li>
-            <li>Luana L., Lui, C. (2020). Chaotic Systems and Stable Civilizational Orbits: Long-Term Predictability in Three-Body Gravitational Models. Celestial Mechanics and Dynamical Astronomy, 35(2), 188-204</li>
-            <li>Luana L., Weir, A. (2018). Closed-Loop Engineering for Survival in Resource-Limited Extraterrtstrial Enviroments. Planetary System Engineering Review, 11(2), 201-2193</li>
-            <li>Luana L., Ashton, E. (2017). Muti-Instancen Identity in Serially Cloned Labor Models. Ethics and Artificial Sentience. 10(1), 121-137</li>
-        </ul>
-    </article>
-    <br>
-    <h2>Skills</h2>
-    <dl>
-        <dt>Simulation &amp; Modeling:</dt>
-        <dd> - MCNP, GEANT4, COMSOL Multiphysics </dd>
-        <dt>Experimental Techniques:</dt>
-        <dd> - Radiation detection (scintillation, semiconductor detectors), Vacuum systems</dd>
-        <dt>Mathematics &amp; Physics:</dt>
-        <dd> - Quantum field theory, Differential equations, Numerical methods, Linear algebra</dd>
-        <dt>Documentation &amp; Reporting</dt>
-        <dd> - LaTeX, data visualization (Matplotlib, seaborn)</dd>
-    </dl>
-</section>
+<div class="main-content">
+    <div class="left-column">
+        <section class="contact">
+            <h3>Contact:</h3>
+            <p>Location: San Diego, California, USA</p>
+            <p>E-mail: axiom_breaker@multiverse.dev</p>
+            <p>GitHub: github.com/lunlumo0</p>
+        </section>
 
+        <section class="education">
+            <h3>Education:</h3>
+            <p><strong>University of California, Berkley</strong></p>
+            <p>PhD in Nuclear Physics | 2018-2021</p>
+            <br>
+            <p><strong>University of San Diego</strong></p>
+            <p>BS in Theoretical Physics and Applied Mathematics | 2016-2018</p>
+            <br>
+            <p><strong>Lomonosov Moscow State University</strong></p>
+            <p>MS in Theoretical Physics and Applied Mathematics | 2012-2016</p>
+        </section>
+
+        <section class="skills">
+            <h3>Skills:</h3>
+            <ul>
+                <li>Teamwork</li>
+                <li>Communication</li>
+                <li>Problem Solving</li>
+                <li>Critical Thinking</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MongoDB</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+</div>
+
+ <div class="right-column">
+     <section class="experience">
+        <h3>Experience:</h3>
+        <p><strong>RS School</strong></p>
+        <p>Junior Front-End Developer</p>
+        <p>2025-present</p>
+        <br>
+        <p><strong>University of California, Berkley</strong></p>
+        <p>Research Assistant</p>
+        <p>2018-present</p>
+     </section>
+
+     <section class="code-example">
+         <h3>Code Example:</h3>
+         <pre> <code class="language-javascript">
+           // The first lime of code to greet the world
+             function helloWorld() {
+                return "Hello, World!";
+             }
+
+           // Function with custom greeting
+             function greetPerson(name) {
+                return "Hello, ${name}!";
+             }
+
+           console.log(helloWorld()); //Output: Hello, World!
+           console.log(greetPerson("Axiom")); //Output: Hello, Axiom!
+         </code>
+         </pre>
+     </section>
+ </div>
+</div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-year">
+            <span>2025</span>
+        </div>
+        <div class="footer-github">
+            <a href="https://github.com/lunlumo0" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="footer-course">
+            <a href="https://rs.school/courses/javascript-ru" target="_blank">
+                <img src="rss-logo.svg" alt="rss logo" class="rss-logo">
+            </a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
