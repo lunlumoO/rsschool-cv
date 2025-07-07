@@ -106,41 +106,119 @@ h3 {
 }
 
 .contact p {
-    margin: 10px 0;
+    margin: 15px 0;
     display: flex;
     align-items: center;
+    gap: 15px;
+    transition: transform 0.2s ease;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.contact i {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    width: 24px;
+    text-align: center;
+}
+.education-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-card .period {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.education-card .institution {
+    color: var(--primary-color);
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.education-card .degree {
+    color: var(--text-color);
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-.education p {
-    margin: 5px 0;
-}
-
-.education strong {
-    color: var(--primary-color);
-    font-size: 1.1em;
-}
-
-.skills ul {
-    list-style: nome;
-    padding: 0;
-    margin: 0;
-}
-
-.skills li {
-    margin: 10px 0;
+.skills-list li {
     padding: 8px 15px;
     background: var(--light-gray);
     border-radius: 20px;
-    display: inline-block;
-    margin-right: 10px;
     font-size: 0.9em;
-    transition: background-color 0.3s ease;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.skills li:hover {
+.skills-list li:hover {
     background: var(--secondary-color);
     color: var(--white);
+    z-index: 2;
+}
+
+.skills {
+    position: relative;
+    z-index: 1;
+}
+
+.skill-indicator {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.skill-indicator::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--primary-color);
+}
+
+.skills-list li:hover .skill-indicator {
+    opacity: 1;
+    visibility: visible;
+    top: -40px;
+}
+
+.skill-name {
+    position: relative;
+    z-index: 1;
 }
 
 .language-list {
@@ -197,13 +275,49 @@ h3 {
     visibility: visible;
 }
 
-.experience p {
-    margin: 5px 0;
+.experience-timeline {
+    position: relative;
+    padding-left: 25px;
 }
 
-.experience strong {
-    color: var(--primary-color);
-    font-size: 1.1em;
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: var(--light-gray);
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 8px;
+    height: 8px;
+    width: 8px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.experience-item .period {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.experience-item .position {
+    color: var(--text-color);
+    font-size: 0.95em;
+    margin-bottom: 10px;
 }
 
 .code-example pre {
