@@ -105,6 +105,22 @@ h3 {
     font-weight: 600;
 }
 
+.contact p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.education p {
+    margin: 5px 0;
+}
+
+.education strong {
+    color: var(--primary-color);
+    font-size: 1.1em;
+}
+
 .skills ul {
     list-style: nome;
     padding: 0;
@@ -127,20 +143,58 @@ h3 {
     color: var(--white);
 }
 
-.contact p {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.language-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.education p {
-    margin: 5px 0;
+.language-list li {
+   margin: 10px 0;
+    padding: 8px 15px;
+    background: var(--light-gray);
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.9em;
+    position: relative;
+    transition: background-color 0.3s ease;
 }
 
-.education strong {
-    color: var(--primary-color);
-    font-size: 1.1em;
+.language-list li:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.level-indicator {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.level-indicator::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--primary-color);
+}
+
+.language-list li:hover .level-indicator {
+    opacity: 1;
+    visibility: visible;
 }
 
 .experience p {
